@@ -1,0 +1,65 @@
+:root{
+    --color-fondo-tarjetas: rgb(163, 79, 241);
+    --color-texto-tarjetas:rgb(64, 36, 36);
+    --color-borde-tarjetas:rgb(161, 56, 56);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parrafo_id{
+    color:red;
+    background-color: aqua;
+
+}
+
+.parrafo_class{
+    color:blueviolet;
+    width: 71%;
+}
+
+h6{
+    color:yellowgreen;
+    background-color: black;
+}
+
+.titulo_h1{
+    text-shadow:2px 5px 10px rgba(0,0,0,0.5);
+    text-transform: uppercase ;
+}
+
+.line_prueba{
+    line-height: 102px;
+    letter-spacing: 3px;
+}
+
+blockquote{
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.tarjeta_class{
+    border: 1px solid black;
+    padding: 5%;
+    margin: center;
+    border-radius: 1cm;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+}
+/* box-sizing:content-box suma el relleno y el borde al ancho y alto especificados*/
+/* box-sizing:border-box los incluye dentro de ese tamaño, osea que no le agrega espacio*/
+
+.tarjeta_class_todas{
+    display: inline-block;
+    border: 1px solid var(--color-borde-tarjetas)   ;
+    padding: 5%;
+    margin: right;
+    border-radius: 1cm;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+    width: 500px;
+    background-color: var(--color-fondo-tarjetas);
+    color: var(--color-texto-tarjetas);
+    
+}
+
