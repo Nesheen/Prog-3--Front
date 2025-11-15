@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Neyén Bianchi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="nav-logo">Neyén Bianchi</a>
+                <button id="theme-toggle" class="theme-button">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Neyén Bianchi</h1>
+                <h2><span id="dynamic-text">Software Developer</span></h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ney%C3%A9n-bianchi-3740b0246/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Nesheen" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <img src="mi_foto.jpeg" alt="Foto">
+            </div>
+        </section>
+
+        <section id="presentacion" class="card">
+            <h2>Presentación Personal</h2>
+            <p>
+                Hola soy Neyén, actualmente me encuentro cursando la tecnicatura universitaria en programación, 
+                todavía estoy definiendo para que lado de la tecnología quiero apuntar. 
+                También me encuentro desempeñando el rol de tutor de JAVA 2 para esta carrera pero la versión a distancia.
+            </p>
+        </section>
+
+        <section id="sobre-mi" class="card">
+            <h2>Sobre Mí</h2>
+            <h3>Biografía</h3>
+            <p>Me gusta aprender y entender como haces cumplir ciertos objetivos.</p>
+            
+            <h3>Habilidades y Herramientas</h3>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>Python</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>SQL</li>
+                <li>MongoDB</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="project-grid">
+                <div class="project-card">En proceso...</div>
+                <div class="project-card">En proceso...</div>
+                <div class="project-card">En proceso...</div>
+                <div class="project-card">En proceso...</div>
+            </div>
+        </section>
+
+        <section id="contacto" class="card">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Portfolio de Neyén Bianchi</p> </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

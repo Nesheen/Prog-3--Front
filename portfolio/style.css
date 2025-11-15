@@ -1,0 +1,227 @@
+:root {
+    --bg-color: #f8f9fa; /* color del fondo */
+    --text-color: #212529; 
+    --card-bg-color: #ffffff; /* fondo de las tarjetas */
+    --primary-color: #663399; 
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+/* --- variables para modo oscuro :D --- */
+body.dark-mode {
+    --bg-color: #121212; /* fondo oscuro */
+    --text-color: #e9ecef; /* texto en blanco */
+    --card-bg-color: #1e1e1e; /* fondo de las tarjetas  */
+    --primary-color: #9a66cc; 
+    --border-color: #343a40;
+    --shadow-color: rgba(255, 255, 255, 0.05);
+}
+
+/* --- estilos generales --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* --- Tarjeta Base (para secciones) --- */
+.card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* --- header y navegación --- */
+.header {
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--card-bg-color);
+    padding: 10px 0;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.theme-button {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.theme-button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+/* --- hero -> osea lo que capta la atención --- */
+.hero {
+    display: flex;
+    flex-wrap: wrap; /* para que se vea bien en celulares */
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 0;
+}
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+.hero-text h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+#dynamic-text {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.hero-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; 
+    object-fit: cover; /* para que la foto no se distorcione (ojala ya no se rompa) */
+    border: 5px solid var(--card-bg-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- habilidades --- */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skills-list li {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* --- proyectos --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
+}
+.project-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    font-style: italic;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* --- sección contacto (formulario) --- */
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+}
+.cta-button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.cta-button:hover {
+    opacity: 0.85;
+}
+
+/* --- footer --- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* --- media query para celulares, en teoria ya no se rompería --- */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse; /* Pone la foto arriba */
+        text-align: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .project-grid {
+        grid-template-columns: 1fr; /* hace que todo este en 1 columna */
+    }
+}
